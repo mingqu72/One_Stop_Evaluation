@@ -1,5 +1,6 @@
 @echo off
 set PATH=D:\Github\Git\cmd;%PATH%
+set GCM_FLOW=device
 echo ==========================================
 echo      Auto-Eval Pro GitHub Uploader
 echo ==========================================
@@ -29,9 +30,10 @@ git remote add origin https://github.com/mingqu72/Futao-Workshop.git
 echo [7/7] Pushing to GitHub...
 echo.
 echo ========================================================
-echo NOTE: A popup window will likely appear.
-echo Please select "Sign in with your browser" or "Token".
-echo If you choose Browser, you can use your normal password!
+echo NOTE: A "Device Code" will appear below (e.g. 1234-5678).
+echo 1. Copy that code.
+echo 2. Go to: https://github.com/login/device
+echo 3. Paste the code and authorize.
 echo ========================================================
 echo.
 git push -u origin main
