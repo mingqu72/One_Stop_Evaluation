@@ -53,8 +53,8 @@ echo 2. If it's a browser window and it's blank -> Close it.
 echo 3. If it's a console prompt -> Type your Token.
 echo ========================================================
 echo.
-echo Executing git push...
-git push -u origin main
+echo Executing git push (Force Push)...
+git push -f -u origin main
 
 :: --- 8. 结果判定 ---
 if %errorlevel% equ 0 (
