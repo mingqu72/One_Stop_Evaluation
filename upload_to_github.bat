@@ -28,8 +28,11 @@ git remote add origin https://github.com/mingqu72/Futao-Workshop.git
 
 echo [7/7] Pushing to GitHub...
 echo.
-echo NOTE: A popup window may appear asking for your GitHub credentials.
-echo Please sign in if prompted.
+echo ========================================================
+echo NOTE: A popup window will likely appear.
+echo Please select "Sign in with your browser" or "Token".
+echo If you choose Browser, you can use your normal password!
+echo ========================================================
 echo.
 git push -u origin main
 
@@ -43,7 +46,7 @@ if %errorlevel% equ 0 (
     echo.
     echo ==========================================
     echo      ERROR: Upload Failed.
-    echo      Please check if Git is installed and in your PATH.
+    echo      Please try running this script again.
     echo ==========================================
 )
 pause
